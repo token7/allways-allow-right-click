@@ -1,2 +1,10 @@
 # allways-allow-right-click
-allways allow right click for chrome
+
+allways proppagate js context event.
+
+```js
+document.addEventListener('contextmenu', function (e) {
+  e.stopPropagation();
+}, true);
+```
+`
